@@ -1,6 +1,6 @@
 function fibonacci(n){
-    if(n < 2) return n;
     if(n < 0) return 0;
+    if(n < 2) return n;
     fibonacci.cache = fibonacci.cache || [];
     if(!fibonacci.cache[n]){
         fibonacci.cache[n] = fibonacci(n - 1) + fibonacci(n - 2);
